@@ -8,7 +8,7 @@
 
 #import "JDChoose.h"
 #import "JDOCTypeToJSType.h"
-#import "JDLog.h"
+#import "JDLogger.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <objc/runtime.h>
 #import <malloc/malloc.h>

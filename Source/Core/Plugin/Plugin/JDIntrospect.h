@@ -11,4 +11,5 @@
 
 @interface JDIntrospect : NSObject<JDFunctionPlugin>
 + (NSArray *)introspect:(id)_obj;
+- (void)Test_Introspect;
 @end

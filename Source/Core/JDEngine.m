@@ -12,7 +12,10 @@
 #import "JDClass4JS.h"
 #import "JDNSStringFromJSString.h"
 #import "JDFunctionPlugin.h"
-#import "JDLog.h"
+#import "JDLogger.h"
+
+// test
+//#import "JDIntrospect.h"
 
 static JSValueRef JDGlobalGetProperty(JSContextRef ctx, JSObjectRef object,
                                       JSStringRef propertyName, JSValueRef *exception)
@@ -28,7 +31,6 @@ static JSValueRef JDGlobalGetProperty(JSContextRef ctx, JSObjectRef object,
 
 @property (nonatomic) JSClassRef globalObject;
 @property (nonatomic) JSGlobalContextRef ctxRef;
-
 @end
 
 @implementation JDEngine
@@ -58,6 +60,7 @@ static JSValueRef JDGlobalGetProperty(JSContextRef ctx, JSObjectRef object,
         _ctxRef = JSGlobalContextCreate(_globalObject);
         
         _context = [JSContext contextWithJSGlobalContextRef:_ctxRef];
+        
     }
     return self;
 }
@@ -80,6 +83,10 @@ static JSValueRef JDGlobalGetProperty(JSContextRef ctx, JSObjectRef object,
     [self.context setExceptionHandler:^(JSContext *context, JSValue *exception){
         JDLog(@"exception is %@", exception);
     }];
+    
+    // test
+//    [[JDIntrospect new] Test_Introspect];
+    
 }
 
 #pragma mark - Public API

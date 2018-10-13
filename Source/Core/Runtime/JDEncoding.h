@@ -6,8 +6,7 @@
 //  Copyright © 2018年 SatanWoo. All rights reserved.
 //
 
-@import Foundation;
-
+#import <Foundation/Foundation.h>
 typedef NS_ENUM(NSUInteger) {
     JDEncodingVoid = 0,
     JDEncodingBool,

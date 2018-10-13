@@ -205,8 +205,7 @@ static void JDSetJSValueToAddress(JDEncoding encoding, JSContextRef ctx,  JSValu
         }
     }
 }
-
-static NSDictionary *JDBuildDictFromStruct(NSString *structName, void *src)
+NSDictionary *JDBuildDictFromStruct(NSString *structName, void *src)
 {
     NSDictionary *defintion = [JDStruct structDefintion:structName];
     if (!defintion) return nil;

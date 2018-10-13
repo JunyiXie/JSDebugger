@@ -1,5 +1,5 @@
 //
-//  JDLog.h
+//  JDLogger.h
 //  JSDebugger
 //
 //  Created by z on 2018/9/21.
@@ -21,8 +21,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JDLog : NSObject
-+ (JDLog *)shared;
+@interface JDLogger : NSObject
++ (JDLogger *)shared;
 - (void)outputLog:(NSString *)logstr;
 /// Specify the output file
 @property (nonatomic, strong) NSString *filePath;
