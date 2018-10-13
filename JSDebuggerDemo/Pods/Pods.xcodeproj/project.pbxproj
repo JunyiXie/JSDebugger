@@ -51,8 +51,6 @@
 		9F91C676216FB49800405E51 /* JDMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F91C673216FB49800405E51 /* JDMacros.h */; };
 		9F91C678216FB4BD00405E51 /* JDTypeEncodings.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F91C677216FB4BC00405E51 /* JDTypeEncodings.h */; };
 		9FB161BE21672AFB00A76163 /* JDLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9FB161BD21672AFB00A76163 /* JDLogger.mm */; };
-		9FB161C12168EF1C00A76163 /* JDGenericValue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9FB161BF2168EF1C00A76163 /* JDGenericValue.mm */; };
-		9FB161C22168EF1C00A76163 /* JDGenericValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FB161C02168EF1C00A76163 /* JDGenericValue.h */; };
 		A1BE16A51ECA744525366E8F1699215A /* JDChoose.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B94DCC1CEC9A84D5DB8F64546678D77 /* JDChoose.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A37E7D9EB5A055F38087CF10D2BC26AB /* JDPropertyCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AC924A2D7CBF799B3F73F25BE7604AF3 /* JDPropertyCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A674D4E30BC525A98509F0C6EA810B32 /* JDProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A64BBB342209254715B0619E4FE95 /* JDProperty.m */; };
@@ -142,8 +140,6 @@
 		9F91C673216FB49800405E51 /* JDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMacros.h; sourceTree = "<group>"; };
 		9F91C677216FB4BC00405E51 /* JDTypeEncodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDTypeEncodings.h; sourceTree = "<group>"; };
 		9FB161BD21672AFB00A76163 /* JDLogger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JDLogger.mm; sourceTree = "<group>"; };
-		9FB161BF2168EF1C00A76163 /* JDGenericValue.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JDGenericValue.mm; sourceTree = "<group>"; };
-		9FB161C02168EF1C00A76163 /* JDGenericValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDGenericValue.h; sourceTree = "<group>"; };
 		9FB161C52168F81600A76163 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		A8442C76B221FF50561BA4EA1A177FA4 /* JDFormatJSFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDFormatJSFunction.h; sourceTree = "<group>"; };
 		AB72DC292BDBB8914CAE0F0547BD0755 /* Pods-JSDebuggerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSDebuggerDemo-resources.sh"; sourceTree = "<group>"; };
@@ -291,8 +287,6 @@
 			children = (
 				835F67A0E55C0135F59178B662CDB078 /* NSObject+JDRuntimeIntrospection.h */,
 				0885577E2E7F629948C3582EC62FFC57 /* NSObject+JDRuntimeIntrospection.mm */,
-				9FB161BF2168EF1C00A76163 /* JDGenericValue.mm */,
-				9FB161C02168EF1C00A76163 /* JDGenericValue.h */,
 			);
 			path = Introspect;
 			sourceTree = "<group>";
@@ -504,7 +498,6 @@
 				19776A5D216520770004E15E /* JDVariadicArguments.h in Headers */,
 				F587C3A8D78F1B4D86B8871D9CAE2FE0 /* NSDictionary+JSConvert.h in Headers */,
 				9F91C674216FB49800405E51 /* JDCustomStruct.h in Headers */,
-				9FB161C22168EF1C00A76163 /* JDGenericValue.h in Headers */,
 				16A0D264340365611E2EBBE6865B8EA0 /* NSObject+JDRuntimeIntrospection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,7 +603,6 @@
 				9FB161BE21672AFB00A76163 /* JDLogger.mm in Sources */,
 				F3EEBD6365F3DDC06FCB6F890F6A02BF /* JDStruct.m in Sources */,
 				9F0CFC07BB3D1D576062D7B17CB8116D /* JSDebugger-dummy.m in Sources */,
-				9FB161C12168EF1C00A76163 /* JDGenericValue.mm in Sources */,
 				CFA1EF15001724B4AA97A97FF6862415 /* JSDebugger.modulemap in Sources */,
 				9D9D6F3F06754D8B8BDD360D9A70F8DC /* libffi.a in Sources */,
 				299BBD38EF9360C7A9FC15D6E3F9751E /* NSDictionary+JSConvert.m in Sources */,

@@ -10,7 +10,6 @@
 #import "JDEncoding.h"
 #import <objc/runtime.h>
 #import "JDFFIContext.h"
-#import "JDGenericValue.h"
 
 #import "JDCustomStruct.h"
 
